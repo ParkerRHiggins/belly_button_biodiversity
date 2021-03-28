@@ -68,8 +68,11 @@ function buildCharts(sample) {
 
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_ids = result.otu_ids;
-    var otu_labels = result.otu_labels.slice(0, 10).reverse;
-    var sample_values = result.sample_values.slice(0, 10).reverse;
+    var otu_labels = result.otu_labels.slice(0, 10).reverse();
+    var sample_values = result.sample_values.slice(0, 10).reverse();
+
+    var bubbleLabels = result.otu_labels;
+    var bubbleValues = result.sample_values;
 
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
@@ -136,7 +139,7 @@ function buildCharts(sample) {
     var gaugeArray = metadata.filter(metaObj => metaObj.id == sample);  
 
     // 2. Create a variable that holds the first sample in the metadata array.
-    var gaugeResult = gaugeArray[0];
+        var gaugeResult = gaugeArray[0];
 
     // 3. Create a variable that holds the washing frequency.
     var wfreqs = gaugeResult.wfreq;
@@ -157,7 +160,7 @@ function buildCharts(sample) {
           {range: [2, 4], color: "orange"},
           {range: [4, 6], color: "yellow"},
           {range: [6, 8], color: "lightgreen"},
-          {range: [8, 10], color: "green"}
+          {range: [8, 10], color: "darkgreen"}
         ],
         dtick: 2
       }
