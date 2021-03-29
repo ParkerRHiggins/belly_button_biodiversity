@@ -14,6 +14,6 @@ Next, using JavaScript, Plotly, and D3.js, I created a bubble chart that display
 
 Next, using JavaScript, Plotly, and D3.js, I created a gauge chart that displays the weekly washing frequency's value, and displays the value as a measure from 0-10 on the progress bar in the gauge chart when an individual ID is selected from the dropdown menu.
 
-### Customized Dashboard and Deploy
+### Customized Dashboard and Deployment
 
 Lastly, I used HTML and Bootstrap to customize the webpage for your dashboard and deployed an interactive chart to GitHub Pages for others to reference.  The completed dashboard can be referenced in GitHub Pages under the Environments section of my belly_button_biodiversity repository.
