@@ -82,7 +82,7 @@ function buildCharts(sample) {
 
     // 8. Create the trace for the bar chart. 
     var barData = [{
-      x: values,
+      x: sample_values,
       y: yticks,
       type: "bar",
       orientation: "h",
